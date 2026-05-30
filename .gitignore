@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+
+# Regenerable publication exports. Keep gallery PNGs in examples/gallery/.
+*.svg
+*.pdf
+*.tif
+*.tiff
+outputs/
