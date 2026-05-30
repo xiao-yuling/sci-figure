@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>sci-figure | Scientific figure skill for AI agents</title>
+    <meta name="description" content="sci-figure is a general-purpose scientific figure skill for AI agents, tuned for SCI and Elsevier-style manuscript figures with Python and R workflows.">
+    <meta name="keywords" content="sci-figure, scientific figure, publication figure, Elsevier figure, SCI figure, AI agent skill, matplotlib, ggplot2, manuscript figures, research plots">
+    <link rel="canonical" href="https://xiao-yuling.github.io/sci-figure/">
+    <meta property="og:title" content="sci-figure">
+    <meta property="og:description" content="A platform-independent scientific figure skill for AI agents, with SCI and Elsevier-friendly plotting rules.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://xiao-yuling.github.io/sci-figure/">
+    <meta property="og:image" content="https://xiao-yuling.github.io/sci-figure/examples/gallery/multipanel-example.png">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "name": "sci-figure",
+        "description": "General-purpose scientific figure instructions for AI agents, designed for SCI and Elsevier-style manuscript figures.",
+        "codeRepository": "https://github.com/xiao-yuling/sci-figure",
+        "programmingLanguage": ["Python", "R"],
+        "license": "https://github.com/xiao-yuling/sci-figure/blob/main/LICENSE"
+      }
+    </script>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #202124;
+        --muted: #5f6368;
+        --line: #dadce0;
+        --paper: #ffffff;
+        --wash: #f7f8fa;
+        --blue: #0b57d0;
+        --red: #b3261e;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        color: var(--ink);
+        background: var(--paper);
+        line-height: 1.55;
+      }
+      header, main, footer {
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 28px 24px;
+      }
+      header {
+        padding-top: 56px;
+        border-bottom: 1px solid var(--line);
+      }
+      h1 {
+        margin: 0 0 10px;
+        font-size: clamp(34px, 6vw, 64px);
+        line-height: 1;
+      }
+      h2 {
+        margin-top: 42px;
+        font-size: 26px;
+      }
+      p { max-width: 760px; }
+      .lead {
+        font-size: 20px;
+        color: var(--muted);
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 22px;
+      }
+      .button {
+        display: inline-block;
+        padding: 10px 14px;
+        border: 1px solid var(--ink);
+        color: var(--ink);
+        text-decoration: none;
+        font-weight: 700;
+      }
+      .button.primary {
+        background: var(--ink);
+        color: white;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 18px;
+        margin-top: 18px;
+      }
+      figure {
+        margin: 0;
+        border: 1px solid var(--line);
+        background: var(--wash);
+        padding: 12px;
+      }
+      figure img {
+        width: 100%;
+        display: block;
+        background: white;
+      }
+      figcaption {
+        margin-top: 8px;
+        font-size: 14px;
+        color: var(--muted);
+      }
+      code {
+        font-family: Consolas, "Liberation Mono", monospace;
+        background: var(--wash);
+        padding: 1px 4px;
+      }
+      ul { padding-left: 20px; }
+      footer {
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>sci-figure</h1>
+      <p class="lead">A general-purpose scientific figure skill for AI agents, tuned for SCI and Elsevier-style manuscript figures.</p>
+      <div class="actions">
+        <a class="button primary" href="https://github.com/xiao-yuling/sci-figure">View on GitHub</a>
+        <a class="button" href="https://github.com/xiao-yuling/sci-figure/blob/main/skill.md">Read skill.md</a>
+      </div>
+    </header>
+    <main>
+      <section>
+        <h2>What it does</h2>
+        <p>
+          sci-figure gives an AI agent practical instructions for creating publication-ready scientific plots:
+          figure contracts, Python/R backend discipline, editable SVG/PDF exports, Times-style typography,
+          full-box axes, outward left/bottom ticks, and compact multi-panel titles.
+        </p>
+        <p>
+          It was inspired by the organization of nature-figure, but the rules and examples are original
+          and oriented toward general SCI and Elsevier-friendly visual conventions.
+        </p>
+      </section>
+      <section>
+        <h2>中文简介</h2>
+        <p>
+          sci-figure 是一套面向 AI agent 的通用科研绘图指令包，适合 SCI 论文、技术报告和投稿图。
+          它参考了 nature-figure 的组织方式，但使用我们自己的规则和示例，更偏向 Elsevier 风格：
+          Times 字体、四边框、左下外向刻度、紧凑多子图标题和克制科研配色。
+        </p>
+      </section>
+      <section>
+        <h2>Gallery</h2>
+        <div class="grid">
+          <figure>
+            <img src="../examples/gallery/scatter-example.png" alt="Scientific scatter plot example">
+            <figcaption>Scatter plot</figcaption>
+          </figure>
+          <figure>
+            <img src="../examples/gallery/line-example.png" alt="Scientific line plot example">
+            <figcaption>Line plot</figcaption>
+          </figure>
+          <figure>
+            <img src="../examples/gallery/heatmap-example.png" alt="Scientific heatmap example">
+            <figcaption>Heatmap</figcaption>
+          </figure>
+          <figure>
+            <img src="../examples/gallery/multipanel-example.png" alt="Scientific multi-panel figure example">
+            <figcaption>Multi-panel figure</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section>
+        <h2>Keywords</h2>
+        <p>
+          scientific figure, publication figure, SCI figure, Elsevier figure style, AI agent skill,
+          manuscript plots, matplotlib, ggplot2, editable SVG, research visualization.
+        </p>
+      </section>
+    </main>
+    <footer>
+      MIT License. Repository: <a href="https://github.com/xiao-yuling/sci-figure">xiao-yuling/sci-figure</a>.
+    </footer>
+  </body>
+</html>

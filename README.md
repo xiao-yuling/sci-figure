@@ -5,6 +5,8 @@ English | [中文](#中文)
 General-purpose scientific figure instructions for AI agents, designed for
 publication-ready SCI-style figures with an Elsevier-friendly visual language.
 
+Project page: https://xiao-yuling.github.io/sci-figure/
+
 `sci-figure` was inspired by the organization of the
 [`nature-figure`](https://github.com/Yuan1z0825/nature-skills/tree/main/skills/nature-figure)
 skill, especially its idea of starting from a figure contract before styling.
@@ -124,10 +126,18 @@ Each script writes a PNG preview to `examples/gallery/`.
 - Use panel subtitles only for multi-panel figures.
 - Use compact, restrained color systems that survive grayscale review.
 
+## Search keywords
+
+scientific figure, publication figure, SCI figure, Elsevier figure style, AI
+agent skill, manuscript plots, matplotlib, ggplot2, editable SVG, research
+visualization.
+
 ## 中文
 
 `sci-figure` 是一套面向 AI agent 的通用科研绘图指令包，用于生成适合
 SCI 论文、技术报告和投稿图的可复现图表。
+
+项目主页：https://xiao-yuling.github.io/sci-figure/
 
 本项目参考了
 [`nature-figure`](https://github.com/Yuan1z0825/nature-skills/tree/main/skills/nature-figure)
@@ -244,6 +254,11 @@ python examples/python/multipanel_example.py
 - 刻度只显示在左侧和下方，并朝外。
 - 只有多子图才使用 `(a) Panel title` 形式的子图标题。
 - 使用紧凑、克制、灰度下仍可读的配色。
+
+## 搜索关键词
+
+科研绘图、SCI 绘图、论文图、投稿图、Elsevier 风格、爱思唯尔绘图风格、
+AI agent skill、matplotlib、ggplot2、可编辑 SVG、科研可视化。
 
 ## License / 许可证
 

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xiao-yuling.github.io/sci-figure/sitemap.xml
