@@ -22,6 +22,11 @@ export settings, and neutral scientific palettes.
 | Scatter plot | ![Scatter example](examples/gallery/scatter-example.png) | Correlation, 1:1 reference, linear fit, compact statistics annotation |
 | Line plot | ![Line example](examples/gallery/line-example.png) | Multi-series trend comparison, restrained legend, light guide grid |
 | Histogram | ![Histogram example](examples/gallery/histogram-example.png) | Distribution summary, reference line, mean marker, compact axis labels |
+| Grouped bar plot | ![Bar example](examples/gallery/bar-example.png) | Group comparison, uncertainty caps, restrained categorical color |
+| Heatmap | ![Heatmap example](examples/gallery/heatmap-example.png) | Matrix patterns, diverging scale, compact colorbar |
+| Violin and box plot | ![Violin box example](examples/gallery/violin-box-example.png) | Distribution shape, median emphasis, group spread |
+| Interval plot | ![Interval example](examples/gallery/interval-example.png) | Effect estimates, uncertainty intervals, null reference |
+| Multi-panel figure | ![Multi-panel example](examples/gallery/multipanel-example.png) | Integrated panel titles, mixed evidence, compact layout |
 
 Gallery PNGs are lightweight previews for documentation. For manuscript use,
 regenerate editable SVG/PDF and high-resolution TIFF/PNG from the scripts.
@@ -53,13 +58,23 @@ sci-figure/
 │   └── qa-checklist.md
 └── examples/
     ├── python/
-    │   ├── scatter_example.py
-    │   ├── line_example.py
-    │   └── histogram_example.py
+│   ├── scatter_example.py
+│   ├── line_example.py
+│   ├── histogram_example.py
+│   ├── bar_example.py
+│   ├── heatmap_example.py
+│   ├── violin_box_example.py
+│   ├── errorbar_example.py
+│   └── multipanel_example.py
     └── gallery/
         ├── scatter-example.png
         ├── line-example.png
-        └── histogram-example.png
+        ├── histogram-example.png
+        ├── bar-example.png
+        ├── heatmap-example.png
+        ├── violin-box-example.png
+        ├── interval-example.png
+        └── multipanel-example.png
 ```
 
 ## Quick start
@@ -83,6 +98,11 @@ Run the included Python examples:
 python examples/python/scatter_example.py
 python examples/python/line_example.py
 python examples/python/histogram_example.py
+python examples/python/bar_example.py
+python examples/python/heatmap_example.py
+python examples/python/violin_box_example.py
+python examples/python/errorbar_example.py
+python examples/python/multipanel_example.py
 ```
 
 Each script writes a PNG preview to `examples/gallery/`.
