@@ -1,9 +1,11 @@
-# sci-figure
+# sci-figure skill
 
 English | [中文](#中文)
 
-General-purpose scientific figure instructions for AI agents, designed for
-publication-ready SCI-style figures with an Elsevier-friendly visual language.
+`sci-figure` is a general-purpose AI skill for scientific figure generation.
+It provides reusable instructions, references, and examples that help AI agents
+create publication-ready SCI-style figures with an Elsevier-friendly visual
+language.
 
 Project page: https://xiao-yuling.github.io/sci-figure/
 
@@ -16,8 +18,16 @@ Elsevier-style manuscript figures: Times-style typography, full-box axes,
 outward ticks on the left and bottom only, compact panel titles, and restrained
 scientific palettes.
 
-`sci-figure` is not tied to any specific AI platform. Copy `skill.md` into any
-agent prompt, project memory, or instruction bundle.
+`sci-figure` is not tied to any specific AI platform. Use it as an AI skill by
+copying `skill.md` into an agent prompt, project memory, custom assistant,
+workflow template, or instruction bundle.
+
+## What is this skill for?
+
+This skill teaches an AI agent how to plan and draw scientific figures. It is
+most useful when the user wants manuscript plots, SCI figures, paper figures,
+multi-panel results, or reproducible plotting scripts with journal-friendly
+exports.
 
 ## Example gallery
 
@@ -87,7 +97,7 @@ sci-figure/
 
 ## Quick start
 
-1. Give `skill.md` to an AI agent.
+1. Give `skill.md` to an AI agent as a reusable skill.
 2. Ask for a scientific figure and specify Python or R.
 3. Provide data, target dimensions, and export needs.
 4. Run the generated script and inspect the output before manuscript use.
@@ -128,14 +138,15 @@ Each script writes a PNG preview to `examples/gallery/`.
 
 ## Search keywords
 
-scientific figure, publication figure, SCI figure, Elsevier figure style, AI
-agent skill, manuscript plots, matplotlib, ggplot2, editable SVG, research
-visualization.
+AI skill, AI skills, scientific plotting skill, scientific figure skill,
+publication figure, SCI figure, Elsevier figure style, manuscript plots,
+matplotlib, ggplot2, editable SVG, research visualization.
 
 ## 中文
 
-`sci-figure` 是一套面向 AI agent 的通用科研绘图指令包，用于生成适合
-SCI 论文、技术报告和投稿图的可复现图表。
+`sci-figure` 是一套面向 AI agent 的通用科研绘图 skill，用于生成适合
+SCI 论文、技术报告和投稿图的可复现图表。它包含可复用的绘图指令、参考规则
+和示例脚本，可以作为 AI skills / agent skills 的一部分使用。
 
 项目主页：https://xiao-yuling.github.io/sci-figure/
 
@@ -146,8 +157,14 @@ SCI 论文、技术报告和投稿图的可复现图表。
 更偏向 Elsevier / SCI 工程类期刊常见的视觉规范，例如 Times 系列字体、四边框坐标轴、
 只在左侧和下方显示外向刻度、紧凑的多子图标题，以及克制的科研配色。
 
-`sci-figure` 不绑定任何特定 AI 平台。你可以把 `skill.md` 交给任意 AI agent，
-也可以把其中的规则复制到项目提示词、agent memory 或团队绘图规范中。
+`sci-figure` 不绑定任何特定 AI 平台。你可以把 `skill.md` 作为一个 skill
+交给任意 AI agent，也可以把其中的规则复制到项目提示词、agent memory、
+自定义助手、工作流模板或团队绘图规范中。
+
+## 这个 skill 适合做什么？
+
+这个 skill 教 AI agent 如何规划和绘制科研图。它适合论文图、SCI 绘图、
+投稿图、多子图结果展示，以及需要可复现脚本和期刊友好导出的绘图任务。
 
 ## 示例图库
 
@@ -216,7 +233,7 @@ sci-figure/
 
 ## 快速开始
 
-1. 把 `skill.md` 提供给 AI agent。
+1. 把 `skill.md` 作为可复用 skill 提供给 AI agent。
 2. 请求绘制科研图，并明确选择 Python 或 R。
 3. 提供数据、目标尺寸和导出需求。
 4. 运行生成的脚本，并在正式投稿前检查输出。
@@ -257,8 +274,9 @@ python examples/python/multipanel_example.py
 
 ## 搜索关键词
 
-科研绘图、SCI 绘图、论文图、投稿图、Elsevier 风格、爱思唯尔绘图风格、
-AI agent skill、matplotlib、ggplot2、可编辑 SVG、科研可视化。
+AI skill、AI skills、agent skill、科研绘图 skill、SCI 绘图、论文图、
+投稿图、Elsevier 风格、爱思唯尔绘图风格、matplotlib、ggplot2、可编辑 SVG、
+科研可视化。
 
 ## License / 许可证
 
