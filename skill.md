@@ -1,3 +1,7 @@
+---
+name: sci-figure
+description: Create, revise, audit, and export publication-ready SCI manuscript figures using Python or R, including multi-panel plots, source-data traceability, editable SVG/PDF output, high-resolution raster files, journal sizing, color palettes, and visual quality assurance.
+---
 # sci-figure skill
 
 Instructions for an AI agent that creates publication-ready scientific figures.
@@ -22,7 +26,7 @@ and visual QA. Do not render a fallback preview with the other language.
 
 ## Default SCI style
 
-- Prefer Times New Roman for manuscript figures, with Times-compatible math text.
+- Use Arial as the default font for manuscript figures, with Arial-compatible math text.
 - Keep text editable in SVG/PDF exports.
 - Use full-box axes unless the target journal explicitly requires open axes.
 - Keep all four spines visible, but place outward ticks only on the left and bottom.
@@ -39,12 +43,12 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 
 mpl.rcParams.update({
-    "font.family": "serif",
-    "font.serif": ["Times New Roman", "Times", "DejaVu Serif", "serif"],
+    "font.family": "sans-serif",
+    "font.sans-serif": ["Arial", "Helvetica", "DejaVu Sans", "sans-serif"],
     "mathtext.fontset": "custom",
-    "mathtext.rm": "Times New Roman",
-    "mathtext.it": "Times New Roman:italic",
-    "mathtext.bf": "Times New Roman:bold",
+    "mathtext.rm": "Arial",
+    "mathtext.it": "Arial:italic",
+    "mathtext.bf": "Arial:bold",
     "svg.fonttype": "none",
     "pdf.fonttype": 42,
     "font.size": 7,
@@ -73,7 +77,7 @@ words and plain numbers outside math mode.
 library(ggplot2)
 
 theme_set(
-  theme_bw(base_size = 6.5, base_family = "Times New Roman") +
+  theme_bw(base_size = 6.5, base_family = "Arial") +
     theme(
       panel.border = element_rect(linewidth = 0.45, colour = "black", fill = NA),
       axis.line = element_blank(),
@@ -96,3 +100,16 @@ or `ragg` for publication exports.
 - Read `references/style-guide.md` before final styling or journal-ready export.
 - Read `references/chart-patterns.md` for chart-family choices.
 - Read `references/qa-checklist.md` before delivery.
+## SCI single-column sizing
+
+For single-column manuscript figures, use a final width of about 85-90 mm (3.35-3.55 in). Keep text readable at that final size:
+
+- Axis labels: 8-9 pt.
+- Tick labels: 7-8 pt.
+- Legend text: 7-8 pt.
+- Integrated panel titles: 9-10 pt.
+- Line widths: about 1.2-1.8 pt for primary curves.
+- Box/spine widths: about 0.8-1.0 pt.
+
+Do not design a figure at double-column width and then shrink it to one column unless the text size was planned for the final printed width.
+

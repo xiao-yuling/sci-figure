@@ -130,7 +130,7 @@ Each script writes a PNG preview to `examples/gallery/`.
 - Build the figure around a scientific claim, not around decoration.
 - Use one backend for all rendering once Python or R is selected.
 - Keep text editable in SVG/PDF outputs.
-- Prefer Times New Roman for manuscript figures, with compatible math text.
+- Use Arial as the default font for manuscript figures, with compatible math text.
 - Keep all four axis spines visible by default.
 - Show ticks only on the left and bottom, and point them outward.
 - Use panel subtitles only for multi-panel figures.
@@ -266,7 +266,7 @@ python examples/python/multipanel_example.py
 - 先围绕科学结论组织图，而不是先追求装饰效果。
 - 一旦选择 Python 或 R，所有渲染、预览、导出和检查都使用同一个后端。
 - SVG/PDF 中尽量保留可编辑文字。
-- 论文图优先使用 Times New Roman，并保持兼容的数学字体。
+- 论文图默认使用 Arial，并保持兼容的数学字体。
 - 默认保留四条坐标轴边框。
 - 刻度只显示在左侧和下方，并朝外。
 - 只有多子图才使用 `(a) Panel title` 形式的子图标题。

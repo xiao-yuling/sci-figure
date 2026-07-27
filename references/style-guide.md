@@ -4,8 +4,8 @@ Use these defaults unless the target journal or provided template overrides them
 
 ## Typography
 
-- Prefer Times New Roman for manuscript figures.
-- Use Times, DejaVu Serif, or another serif fallback when Times New Roman is not available.
+- Use Arial as the default font for manuscript figures.
+- Use Helvetica, DejaVu Sans, or another sans-serif fallback when Arial is not available.
 - Keep base text around 6.5-8 pt for compact journal figures.
 - Use larger text only for slide-sized or poster-sized outputs.
 - Keep ordinary words outside math mode.
@@ -32,6 +32,24 @@ Use these defaults unless the target journal or provided template overrides them
 - Check that the figure remains legible in grayscale.
 - Avoid assigning unrelated saturated colors to related method families.
 
+
+### Biomedical pastel option
+
+Use this low-saturation palette for experimental comparisons when it remains
+legible against the selected background:
+
+~~~python
+SCI_BIOMEDICAL_PASTEL = {
+    "neutral_grey": "#D6D6D6",
+    "mist_blue": "#9CB0C3",
+    "sage_green": "#7C9D97",
+    "soft_orange": "#EAB080",
+}
+~~~
+
+For line plots, use strokes of at least 1.2 pt and reinforce pale colors with
+line styles, markers, or dark outlines. Do not rely on the sage-green and
+soft-orange distinction alone; verify grayscale and color-vision legibility.
 ## Export
 
 - Use SVG as the primary editable vector output.
