@@ -10,12 +10,12 @@ GALLERY = ROOT / "gallery"
 GALLERY.mkdir(parents=True, exist_ok=True)
 
 mpl.rcParams.update({
-    "font.family": "serif",
-    "font.serif": ["Times New Roman", "Times", "DejaVu Serif", "serif"],
+    "font.family": "sans-serif",
+    "font.sans-serif": ["Arial", "Helvetica", "DejaVu Sans", "sans-serif"],
     "mathtext.fontset": "custom",
-    "mathtext.rm": "Times New Roman",
-    "mathtext.it": "Times New Roman:italic",
-    "mathtext.bf": "Times New Roman:bold",
+    "mathtext.rm": "Arial",
+    "mathtext.it": "Arial:italic",
+    "mathtext.bf": "Arial:bold",
     "svg.fonttype": "none",
     "pdf.fonttype": 42,
     "font.size": 7,
